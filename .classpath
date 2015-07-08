@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="res"/>
+	<classpathentry kind="con" path="org.elipse.mtj.JavaMEContainer/Sun Java(TM) Wireless Toolkit 2.5.2 for CLDC/DefaultColorPhone"/>
+	<classpathentry exported="true" kind="lib" path="lib/json4javame.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/worklight-javame.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
