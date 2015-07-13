@@ -1,13 +1,15 @@
 IBM MobileFirst Platform Foundation
 ===
-### Sample Name
+### Invoking adapter procedures in JavaME
 
 
 ### Usage
-Follow the instructions in the tutorials listed below.
+Follow the instructions in the tutorial(s) listed below.
 
 ### Tutorials
 
+**Java ME**
+https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/foundation/server-side-development-category/invoking-adapter-procedures-native-java-platform-micro-editions-java-applications/
 
 ### Supported Levels
 IBM MobileFirst Platform Foundation 7.1
