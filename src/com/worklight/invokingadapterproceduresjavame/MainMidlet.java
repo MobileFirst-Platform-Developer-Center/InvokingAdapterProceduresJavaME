@@ -32,15 +32,15 @@ import com.worklight.wlclient.api.WLProcedureInvocationData;
 import com.worklight.wlclient.api.WLRequestOptions;
 
 public class MainMidlet extends MIDlet implements CommandListener,ItemCommandListener{
-	
+
 	private Display  display;
-	private Form form;	
+	private Form form;
     private StringItem connect;
     private StringItem invoke;
     private static StringItem result;
 	private Command exit;
 	private WLClient client;
-	
+
 
 	public MainMidlet() {
 		client = WLClient.createInstance(this);
@@ -82,16 +82,16 @@ public class MainMidlet extends MIDlet implements CommandListener,ItemCommandLis
 		}else if(itemName.getText().equals("2.Invoke Procedure")) {
 			updateTextView("\nInvoking procedure...");
 			String adapterName = "RSSReader";
-			String procedureName = "getFeedsFiltered";
-			
+			String procedureName = "getFeedFiltered";
+
 			WLProcedureInvocationData invocationData = new WLProcedureInvocationData(adapterName, procedureName);
-			
+
 			Object[] parameters = new Object[] {};
 			invocationData.setParameters(parameters);
-			
-			WLRequestOptions options = new WLRequestOptions();	
+
+			WLRequestOptions options = new WLRequestOptions();
 			client.invokeProcedure(invocationData, new MyInvokeListener(), options);
-			  
+
 		  }
 	}
 	public void commandAction(Command command, Displayable displayable) {
@@ -100,11 +100,11 @@ public class MainMidlet extends MIDlet implements CommandListener,ItemCommandLis
 			  try{
 				  destroyApp(true);
 			  }catch(Exception e){
-				  
+
 			  }
-		  }		
+		  }
 	}
 	public static void updateTextView(final String response){
-		result.setText(response);		
+		result.setText(response);
 	}
 }
